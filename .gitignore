@@ -1,0 +1,29 @@
+# Mac OSX
+.DS_Store
+
+# Emacs
+*~
+
+# Python
+*.pyc
+lib/*.pyc
+.ipynb_checkpoints
+__pycache__
+.idea
+
+# Output & Resource
+results
+scripts
+references
+comparisons
+
+# Dataset files
+*.pickle
+*.tsv
+*.csv
+*.xlsx
+src/lib/results
+
+# Others
+tmp*
+devel*
