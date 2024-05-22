@@ -56,4 +56,4 @@ Evaluation (if you have the true network)
 
 
 ## Abstraction of algorithm
-![screenshot](https://gitlab.com/funalab/malon/-/raw/images/figure1.png)
+![screenshot](https://github.com/hikiki-no-ki/MaLoN/raw/images/figure1.png)
