@@ -1,0 +1,8 @@
+lexA	recA
+lexA	uvrD
+lexA	umuDC
+lexA	uvrA
+lexA	uvrY
+lexA	ruvA
+lexA	polB
+recA	lexA
