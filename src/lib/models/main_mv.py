@@ -119,9 +119,10 @@ def trainer(inputs):
                    'attention_loss': attention_loss_list_i}
 
     # Get edgelist for the target gene
+    weighted_reg_score_i = [utils.sigmoid_mean(x=x, n=len(gene_names)-1, a=5) for x in np.array(dyn_reg_map_i.data)]
     edgelist_i = utils.get_edgelist(source_name_list=regulators_name,
                                     target_name=target_name,
-                                    scores=list(np.array(reg_score_i.data)))
+                                    scores=weighted_reg_score_i)
 
     # Get regulation symbol (source->target)
     regulation_names = []
