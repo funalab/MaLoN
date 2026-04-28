@@ -159,11 +159,13 @@ def get_gene_index(expression, gene_name, regulators_file='all', targets_file='a
 
     return regulators_index, targets_index
 
-'''
-def random_embedding(x):
-    xy_size = [10, 10]
-    x = np.zeros(xy_size)
-    y = np.ones(xy_size)
 
-    x.
-'''
+# Function to calculate scores for edgelist
+def sigmoid_mean(x, n, a=5):
+    min = 1 / (1 + np.exp(a * 1/n))
+    max = 1 / (1 + np.exp(-a * (1-1/n)))
+    y = 1 / (1 + np.exp(-a * (x-1/n)))
+    norm_y = (y-min) / (max-min)
+
+    return np.mean(norm_y)
+
